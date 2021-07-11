@@ -1,0 +1,88 @@
+/*  Button styling */
+
+.button {
+    -fx-background-radius: 0;
+    -fx-font-size: 2em;
+    -fx-content-display: CENTER;
+    -fx-background-color: #FFC857;
+    -fx-blend-mode: SCREEN;
+}
+
+.button:hover {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4d4d4d;
+}
+
+.button:pressed {
+    -fx-background-color: #B87A00;
+}
+
+
+/*  Background styling */
+
+.root {
+    -fx-background-position: center, center;
+    -fx-background-size: cover, auto;
+    -fx-background-image: url("../../resources/img/background.png");
+    -fx-background-repeat: stretch;
+}
+
+#main-background {
+    -fx-background-position: center, center;
+    -fx-background-size: cover, auto;
+    -fx-background-image: url("../../resources/img/mainmenu.png");
+    -fx-background-repeat: stretch;
+}
+
+/*  Slider styling */
+
+.slider {
+    -fx-show-tick-labels: false;
+    -fx-show-tick-marks: false;
+}
+
+.slider .thumb {
+    -fx-background-color: #FFAD0A;
+    -fx-padding: 10;
+}
+
+.slider .track {
+    -fx-pref-height: 10;
+    -fx-background-color: #FFFFFF80;
+}
+
+/*  Checkbox styling */
+
+.check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #FFAD0A;
+    -fx-border-color: transparent;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: transparent;
+}
+
+/* ChoiceBox styling */
+
+.choice-box {
+    -fx-background-radius: 0;
+    -fx-content-display: CENTER;
+    -fx-background-color: #FFC857;
+    -fx-blend-mode: SCREEN;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: white;
+}
+
+.choice-box .menu-item:focused {
+    -fx-background-color: #89CFF0;
+}
+
+

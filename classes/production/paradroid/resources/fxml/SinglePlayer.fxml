@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handlers.SinglePlayer">
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="665.0" layoutY="91.0" style="-fx-text-fill:#FFFFFF" text="Single Player" textAlignment="CENTER">
+        <font>
+            <Font size="39.0" />
+        </font>
+    </Label>
+    <Button layoutX="38.0" layoutY="697.0" mnemonicParsing="false" onAction="#getMain" prefHeight="74.0" prefWidth="174.0" text="Back">
+        <font>
+            <Font name="System Bold" size="22.0" />
+        </font>
+    </Button>
+    <VBox alignment="CENTER" layoutX="477.0" layoutY="222.0" prefHeight="357.0" prefWidth="597.0" spacing="20.0">
+        <children>
+            <Button fx:id="Easy" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getGameEasy" prefHeight="101.0" prefWidth="435.0" stylesheets="@../css/style.css" text="Easy">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+            <Button fx:id="Medium" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getGameMedium" prefHeight="97.0" prefWidth="435.0" stylesheets="@../css/style.css" text="Medium">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+            <Button fx:id="Hard" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#getGameHard" prefHeight="99.0" prefWidth="435.0" stylesheets="@../css/style.css" text="Hard">
+                <font>
+                    <Font name="System Bold" size="22.0" />
+                </font>
+            </Button>
+        </children>
+    </VBox>
+   <VBox alignment="CENTER_LEFT" blendMode="SCREEN" layoutX="1035.0" prefHeight="806.0" prefWidth="519.0" spacing="10.0" style="-fx-background-color: #FFC857;">
+      <children>
+         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="How To Play" textAlignment="CENTER" wrappingWidth="476.9052734375">
+            <font>
+               <Font size="38.0" />
+            </font>
+         </Text>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="123.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/arrowkeys.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use the arrow keys to control your snake" wrappingWidth="323.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="691.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/spacebar.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Use the spacebar to use a power up" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="207.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0food.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Collect fruit to grow your snake in length" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="291.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../img/lifebg.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aim to be the last one standing" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="321.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0coin.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Collect coins to use in the shop" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0reverse.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temporarily invert your opponent's controls" wrappingWidth="338.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="579.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0freeze.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Temporarily freeze your opponent" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="639.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0mine.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Drop a hidden mine to destroy your opponent" wrappingWidth="366.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="699.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0skip.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Glide through a wall with ease" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="954.0" prefHeight="40.0" prefWidth="461.0" spacing="20.0">
+            <children>
+               <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../../server/resources/mapskins/skin0speed.png" />
+                  </image>
+               </ImageView>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gain a temporary speed boost" wrappingWidth="267.458984375">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+            </children>
+         </HBox>
+      </children>
+      <padding>
+         <Insets left="20.0" right="20.0" />
+      </padding>
+   </VBox>
+</AnchorPane>

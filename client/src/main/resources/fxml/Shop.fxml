@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="800.0" prefWidth="1550.0" stylesheets="@../css/style.css"
+            xmlns="http://javafx.com/javafx/15.0.1" fx:controller="handlers.Shop">
+    <Label layoutX="715.0" layoutY="60.0" style="-fx-text-fill:#FFFFFF" text="Shop">
+        <font>
+            <Font size="36.0"/>
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="OVERLAY" fill="#4022339a" height="287.0" layoutX="126.0"
+               layoutY="139.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1305.0"/>
+    <Label layoutX="363.0" layoutY="277.0"/>
+    <Label fx:id="description" contentDisplay="CENTER" layoutX="582.0" layoutY="137.0" prefHeight="287.0"
+           prefWidth="568.0" text="Welcome to the shop!" textFill="WHITE" wrapText="true">
+        <font>
+            <Font size="28.0"/>
+        </font>
+    </Label>
+    <HBox alignment="BOTTOM_CENTER" blendMode="HARD_LIGHT" layoutX="74.0" layoutY="466.0" prefHeight="202.0"
+          prefWidth="1409.0" spacing="20.0">
+        <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label alignment="CENTER" contentDisplay="CENTER" text="Skin 1" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button fx:id="item1" mnemonicParsing="false" onAction="#itemOneDescription"
+                                    prefHeight="62.0" prefWidth="174.0" stylesheets="@../css/style.css" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label alignment="CENTER" contentDisplay="CENTER" text="Skin 2" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button mnemonicParsing="false" onAction="#itemTwoDescription" prefHeight="62.0"
+                                    prefWidth="174.0" stylesheets="@../css/style.css" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label text="Skin 3" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button mnemonicParsing="false" onAction="#itemThreeDescription" prefHeight="62.0"
+                                    prefWidth="174.0" stylesheets="@../css/style.css" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label text="Map 1" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button mnemonicParsing="false" onAction="#itemFourDescription" prefHeight="62.0"
+                                    prefWidth="174.0" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label text="Map 2" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button mnemonicParsing="false" onAction="#itemFiveDescription" prefHeight="62.0"
+                                    prefWidth="174.0" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#412234" height="200.0" stroke="BLACK"
+                               strokeType="INSIDE" width="200.0"/>
+                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                        <children>
+                            <Label text="Map 3" textFill="WHITE">
+                                <font>
+                                    <Font size="25.0"/>
+                                </font>
+                            </Label>
+                            <Button mnemonicParsing="false" onAction="#itemSixDescription" prefHeight="62.0"
+                                    prefWidth="174.0" text="Select">
+                                <font>
+                                    <Font name="System Bold" size="22.0"/>
+                                </font>
+                            </Button>
+                        </children>
+                    </VBox>
+                </children>
+            </Pane>
+        </children>
+    </HBox>
+    <VBox alignment="CENTER" layoutX="1177.0" layoutY="142.0" prefHeight="280.0" prefWidth="252.0" spacing="20.0">
+        <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="279.0" text="Price"
+                   textFill="WHITE">
+                <font>
+                    <Font size="31.0"/>
+                </font>
+            </Label>
+            <Label fx:id="price" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="286.0"
+                   textFill="WHITE">
+                <font>
+                    <Font size="31.0"/>
+                </font>
+            </Label>
+            <Button fx:id="owned" mnemonicParsing="false" onAction="#itemPurchaser" prefHeight="74.0" prefWidth="252.0"
+                    styleClass="singleplayer">
+                <font>
+                    <Font name="System Bold" size="12.0"/>
+                </font>
+            </Button>
+        </children>
+        <padding>
+            <Insets left="20.0" right="20.0"/>
+        </padding>
+    </VBox>
+    <HBox alignment="CENTER" layoutX="1262.0" layoutY="14.0" prefHeight="100.0" prefWidth="274.0">
+        <children>
+            <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="46.0" prefWidth="150.0" text="Balance: "
+                   textAlignment="RIGHT" textFill="WHITE">
+                <font>
+                    <Font size="30.0"/>
+                </font>
+            </Label>
+            <Label fx:id="balance" contentDisplay="CENTER" prefHeight="46.0" prefWidth="141.0" text="       "
+                   textFill="WHITE">
+                <font>
+                    <Font size="30.0"/>
+                </font>
+            </Label>
+        </children>
+    </HBox>
+    <Pane layoutX="133.0" layoutY="137.0" prefHeight="288.0" prefWidth="410.0">
+        <children>
+            <ImageView fx:id="snakeImage" fitHeight="251.0" fitWidth="414.0" layoutX="-5.0" layoutY="25.0"
+                       pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../img/snake.jpg"/>
+                </image>
+            </ImageView>
+            <HBox alignment="CENTER" layoutX="-6.0" prefHeight="285.0" prefWidth="408.0" spacing="20.0">
+                <children>
+                    <ImageView fx:id="body" fitHeight="130.0" fitWidth="161.0" pickOnBounds="true"
+                               preserveRatio="true"/>
+                    <ImageView fx:id="head" fitHeight="130.0" fitWidth="161.0" pickOnBounds="true"
+                               preserveRatio="true"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="-6.0" layoutY="-3.0" prefHeight="287.0" prefWidth="408.0" spacing="20.0">
+                <children>
+                    <ImageView fx:id="map1" fitHeight="123.0" fitWidth="113.0" pickOnBounds="true"
+                               preserveRatio="true"/>
+                    <ImageView fx:id="map2" fitHeight="123.0" fitWidth="113.0" pickOnBounds="true"
+                               preserveRatio="true"/>
+                    <ImageView fx:id="map3" fitHeight="123.0" fitWidth="113.0" pickOnBounds="true"
+                               preserveRatio="true"/>
+                </children>
+            </HBox>
+        </children>
+    </Pane>
+    <HBox alignment="CENTER" layoutX="131.0" layoutY="695.0" prefHeight="70.0" prefWidth="1296.0" spacing="20.0">
+        <children>
+            <Button mnemonicParsing="false" onAction="#getMain" prefHeight="70.0" prefWidth="237.0" text="Back">
+                <font>
+                    <Font name="System Bold" size="22.0"/>
+                </font>
+            </Button>
+            <Button fx:id="defaultmap" mnemonicParsing="false" onAction="#defaultMap" prefHeight="70.0"
+                    prefWidth="227.0" text="Default Map">
+                <font>
+                    <Font name="System Bold" size="22.0"/>
+                </font>
+            </Button>
+            <Button fx:id="defaultskin" mnemonicParsing="false" onAction="#defaultSkin" prefHeight="70.0"
+                    prefWidth="239.0" text="Default Skin">
+                <font>
+                    <Font name="System Bold" size="22.0"/>
+                </font>
+            </Button>
+            <Label fx:id="notification" alignment="CENTER" contentDisplay="CENTER" prefHeight="70.0" prefWidth="702.0"
+                   textFill="WHITE">
+                <font>
+                    <Font size="20.0"/>
+                </font>
+            </Label>
+        </children>
+    </HBox>
+</AnchorPane>

@@ -1,0 +1,108 @@
+
+### Git Ignore source was found at from these sources
+
+# Source - https://github.com/akshaybabloo/JavaFX/blob/master/.gitignore	For JavaFX
+# Source - https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore	For Intellij
+# Source - https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore	For Eclipse
+# Source - https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore 	For Netbeans
+# Source - https://github.com/github/gitignore/blob/master/Global/VisualStudioCode.gitignore For Visual Studio Code
+
+
+client/src/main/resources/storage/gamedata.txt
+/client/src/main/resources/storage/gamedata.txt
+
+*.iml
+
+.classpath
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+## Directory-based project format:
+.idea/
+
+# Gradle:
+# .idea/gradle.xml
+# .idea/libraries
+
+# Mongo Explorer plugin:
+# .idea/mongoSettings.xml
+
+## File-based project format:
+*.ipr
+*.iws
+
+## Plugin-specific files:
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# *.ipr
+
+# IntelliJ
+out/
+
+.metadata
+lib/javafx/bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+.apt_generated_test/
+
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# build folder
+out
+
+# vscode
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+/bin/
